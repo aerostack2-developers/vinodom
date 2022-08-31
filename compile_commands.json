@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/home/dps/aerostack2_ws/src/aerostack2/stack/state_estimation/vinodom/build/linux-debug",
-  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/dps/aerostack2_ws/src/aerostack2/stack/state_estimation/vinodom/include -isystem /opt/ros/galactic/include -isystem /usr/include/opencv4 -isystem /usr/include/eigen3  -g   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/vinodom.dir/src/vinodom.cpp.o -c /home/dps/aerostack2_ws/src/aerostack2/stack/state_estimation/vinodom/src/vinodom.cpp",
-  "file": "/home/dps/aerostack2_ws/src/aerostack2/stack/state_estimation/vinodom/src/vinodom.cpp"
+  "directory": "/home/miguel/aerostack2_ws/src/aerostack2/stack_devel/vinodom/build/linux-debug",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/miguel/aerostack2_ws/src/aerostack2/stack_devel/vinodom/include -isystem /home/miguel/aerostack2_ws/install/mbzirc_msgs/include -isystem /opt/ros/galactic/include -isystem /usr/include/opencv4 -isystem /usr/include/eigen3 -isystem /home/miguel/aerostack2_ws/install/as2_msgs/include  -g   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/vinodom.dir/src/vinodom.cpp.o -c /home/miguel/aerostack2_ws/src/aerostack2/stack_devel/vinodom/src/vinodom.cpp",
+  "file": "/home/miguel/aerostack2_ws/src/aerostack2/stack_devel/vinodom/src/vinodom.cpp"
 }
 ]

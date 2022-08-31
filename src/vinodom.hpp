@@ -206,10 +206,27 @@ private:
      */
     void reset(const std::shared_ptr<mbzirc_msgs::srv::SetPoseStamped::Request> request, std::shared_ptr<mbzirc_msgs::srv::SetPoseStamped::Response> response)
     {
-        // Get init position
+
+        // If pose is empty return last pose
+        if (request->pose.pose.position.x == 0.0 && request->pose.pose.position.y == 0.0 && request->pose.pose.position.z == 0.0)
+        {
+            initX_ = tx_;
+            initY_ = ty_;
+            initZ_ = barHeigh_;
+            pureInertial_ = true;
+        }
+        else
+        {
+            initX_ = request->pose.pose.position.x;
+            initY_ = request->pose.pose.position.y;
+            initZ_ = request->pose.pose.position.z;
+            pureInertial_ = true;
+        }
+
+        /* // Get init position
         initX_ = request->pose.pose.position.x;
         initY_ = request->pose.pose.position.y;
-        initZ_ = request->pose.pose.position.z;
+        initZ_ = request->pose.pose.position.z; */
 
         // Reset the required control flags
         haveKFrame_ = false;
